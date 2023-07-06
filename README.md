@@ -12,13 +12,12 @@ Resilient / ANTIFRAGILE(불확실성과 혼돈으로 부터 이익을 얻는 성
 
 - Anti-Fragile을 통해서 위에 그래프를 통해서 알 수 있는 것은 낮은 비용과 시스템 변화가 적고 화에 바로 적용할 수 있다는 것을 확인 가능
 
-![123.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/394df338-68bb-4f61-8421-aa7706a0debc/123.png)
 
 - Anti-Fragile의 주요 점으로 DevOps와 Cloud Native 기술들이 사용된다.
 
 ## Antifragile의 특징
 
-![antiflagile.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ab1a246-75bf-4043-9bc1-c433a1527ef8/antiflagile.png)
+![antiflagile](https://github.com/Croon00/MSA-/assets/73871364/c1672ceb-f0cd-4792-b073-644bb51ef1d1)
 
 ### 1. Auto scaling (자동 확장성)
 
@@ -29,7 +28,7 @@ Resilient / ANTIFRAGILE(불확실성과 혼돈으로 부터 이익을 얻는 성
 
 ### 2. Microservices
 
-![netflix의 마이크로서비스.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1802dec7-e514-4d93-be1b-93172ca1b679/netflix%EC%9D%98_%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4.png)
+![netflix의 마이크로서비스](https://github.com/Croon00/MSA-/assets/73871364/a1fed421-fc1c-4663-98ac-ca0470cd33b0)
 
 - netflix의 복잡한 서비스를 그래프와 노드로 보여준 경우
 - Cloud Service를 가장 잘 이용하는 netflix에서 보여준다.
@@ -38,13 +37,13 @@ Resilient / ANTIFRAGILE(불확실성과 혼돈으로 부터 이익을 얻는 성
 
 ### 3. Chaos engineering
 
-![카오스 엔지니어링.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ce93422c-a09e-4b6b-9950-4a078710ad1a/%EC%B9%B4%EC%98%A4%EC%8A%A4_%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81.png)
+![카오스 엔지니어링](https://github.com/Croon00/MSA-/assets/73871364/850379ca-e302-4335-a644-fbd2d65d94c2)
 
 - 시스템의 실행하는 방법이라던가 규칙(불확실성에 대한 안정적인 서비스를 제공해야 한다)
 
 ### 4. CI/CD 지속적인 통합,배포
 
-![CICD.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/df6068fb-a89c-49a9-927c-ef02a81bff73/CICD.png)
+![CICD](https://github.com/Croon00/MSA-/assets/73871364/26fd9274-5c02-4fa7-93c2-f79eb8321f0a)
 
 - 수십 수백개의 서비스를 pipeline으로 연계시켜 놓으면 빠르게 적용하여 빌드하고 배포 가능 (이전 부터 사용)
 
@@ -94,11 +93,11 @@ Resilient / ANTIFRAGILE(불확실성과 혼돈으로 부터 이익을 얻는 성
 
 ### SOA와 MSA의 차이
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/91ad050a-3875-4c89-ba3e-9ecaa8c8bde5/Untitled.png)
+![Untitled](https://github.com/Croon00/MSA-/assets/73871364/9ab5456b-9a75-4400-82c5-974b699e3680)
 
 ### RESTful
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/023b41d8-f45c-485a-92ad-ff0db8aee3ca/Untitled.png)
+![asdf](https://github.com/Croon00/MSA-/assets/73871364/41d5c457-78d7-4832-a9fe-76e5c3cc1b67)
 
 - 0단계에서는 그냥 url을 통해서 요청
 - 1단계에는 resource를 uri에 합침
@@ -106,8 +105,6 @@ Resilient / ANTIFRAGILE(불확실성과 혼돈으로 부터 이익을 얻는 성
 - 3단계에는 하나의 리소스를 사용함에 있어서 다른 작업으로 넘어가는  것에 대해서 작용
 
  
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b35f0f49-9030-435c-b3bf-e59d92babbeb/Untitled.png)
 
 ### Spring Cloud 공식 홈페이지
 
