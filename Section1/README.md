@@ -2,7 +2,8 @@
 
 - Netflix가 가지고 있는 클라우드 기술을 Java Spring에 공유
 
-![Untitled](https://github.com/Croon00/MSA-/assets/73871364/87349896-4731-40d7-aae4-7b85da0fb983)
+![MSA](https://github.com/Croon00/MSA-/assets/73871364/3669e26b-42b7-44e4-b527-f3e16dd99dcc)
+
 
 - ServiceDiscovery (어떠한 서버가 어느 위치에 있는지 등록, 검색 등을 해주는 역할) 웹 서비스 처럼 기동
 - 각 마이크로 서비스를 Discovery에 등록을 하여서 사용
