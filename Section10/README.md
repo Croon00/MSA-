@@ -246,7 +246,7 @@ order-service:
 - 거기다가 완전 개발환경 부터 다른 서비스를 사용할 경우 문제가 발생할 수 도 있다.
 1. 데이터베이스를 서로 동기화 하여서 사용
 
-![8](https://github.com/Croon00/MSA-/assets/73871364/
+![8](https://github.com/Croon00/MSA-/assets/73871364/611834fb-2e12-4d90-9781-f825336c9e3d)
 
 - apache kafka, rabbitmq 를 이용하여 데이터 변경 사항을 Message Queing 서버에 알려주면 두 번째 order-service가 변경된 사항을 가져가는 방법(구독해놓았을 경우)
 
