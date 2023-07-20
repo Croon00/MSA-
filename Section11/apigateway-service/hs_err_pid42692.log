@@ -1,0 +1,203 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 536870912 bytes for Failed to commit area from 0x0000000601200000 to 0x0000000621200000 of length 536870912.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (./src/hotspot/os/windows/os_windows.cpp:3386), pid=42692, tid=11116
+#
+# JRE version:  (11.0.18+10) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.18+10-LTS, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:TieredStopAtLevel=1 -Xverify:none -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dmanagement.endpoints.jmx.exposure.include=* -javaagent:D:\IntelijUlti\IntelliJ IDEA 2022.3.2\lib\idea_rt.jar=6059:D:\IntelijUlti\IntelliJ IDEA 2022.3.2\bin -Dfile.encoding=UTF-8 com.example.apigatewayservice.ApigatewayServiceApplication
+
+Host: AMD Ryzen 5 5600X 6-Core Processor             , 12 cores, 31G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3155)
+Time: Thu Jul 20 18:52:40 2023  Windows 10 , 64 bit Build 19041 (10.0.19041.3155) elapsed time: 0.028978 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002b59fac4800):  JavaThread "Unknown thread" [_thread_in_vm, id=11116, stack(0x000000dbf0c00000,0x000000dbf0d00000)]
+
+Stack: [0x000000dbf0c00000,0x000000dbf0d00000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x62bdca]
+V  [jvm.dll+0x7b9bc9]
+V  [jvm.dll+0x7bb2b8]
+V  [jvm.dll+0x7bb993]
+V  [jvm.dll+0x253258]
+V  [jvm.dll+0x6290ca]
+V  [jvm.dll+0x61d685]
+V  [jvm.dll+0x30e45c]
+V  [jvm.dll+0x30e2e2]
+V  [jvm.dll+0x312ff6]
+V  [jvm.dll+0x35ab4f]
+V  [jvm.dll+0x35a580]
+V  [jvm.dll+0x2eac58]
+V  [jvm.dll+0x2ebdb6]
+V  [jvm.dll+0x793b77]
+V  [jvm.dll+0x795301]
+V  [jvm.dll+0x367989]
+V  [jvm.dll+0x776a10]
+V  [jvm.dll+0x3d94df]
+V  [jvm.dll+0x3db871]
+C  [jli.dll+0x5207]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17614]
+C  [ntdll.dll+0x526b1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000002b59f8e4130, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000002b59fadd000 GCTaskThread "GC Thread#0" [stack: 0x000000dbf0d00000,0x000000dbf0e00000] [id=45196]
+  0x000002b59fb5d000 ConcurrentGCThread "G1 Main Marker" [stack: 0x000000dbf0e00000,0x000000dbf0f00000] [id=17304]
+  0x000002b59fb61800 ConcurrentGCThread "G1 Conc#0" [stack: 0x000000dbf0f00000,0x000000dbf1000000] [id=15076]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffd8e14aa87]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000002b59fac11f0] Heap_lock - owner thread: 0x000002b59fac4800
+
+Heap address: 0x0000000601200000, size: 8174 MB, Compressed Oops mode: Non-zero based: 0x0000000601200000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.022 Loaded shared library C:\Program Files\Zulu\zulu-11\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff640250000 - 0x00007ff64025d000 	C:\Program Files\Zulu\zulu-11\bin\java.exe
+0x00007ffe09e90000 - 0x00007ffe0a088000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffe08780000 - 0x00007ffe0883f000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffe07b80000 - 0x00007ffe07e76000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffe07760000 - 0x00007ffe07860000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffdfd700000 - 0x00007ffdfd717000 	C:\Program Files\Zulu\zulu-11\bin\jli.dll
+0x00007ffdfd360000 - 0x00007ffdfd375000 	C:\Program Files\Zulu\zulu-11\bin\VCRUNTIME140.dll
+0x00007ffe083d0000 - 0x00007ffe0856d000 	C:\Windows\System32\USER32.dll
+0x00007ffe07570000 - 0x00007ffe07592000 	C:\Windows\System32\win32u.dll
+0x00007ffe083a0000 - 0x00007ffe083cc000 	C:\Windows\System32\GDI32.dll
+0x00007ffe07900000 - 0x00007ffe07a15000 	C:\Windows\System32\gdi32full.dll
+0x00007ffe07860000 - 0x00007ffe078fd000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffdf9d70000 - 0x00007ffdfa00a000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffe09d00000 - 0x00007ffe09d9e000 	C:\Windows\System32\msvcrt.dll
+0x00007ffe09580000 - 0x00007ffe095b0000 	C:\Windows\System32\IMM32.DLL
+0x00007ffdce740000 - 0x00007ffdce7db000 	C:\Program Files\Zulu\zulu-11\bin\msvcp140.dll
+0x00007ffd8de50000 - 0x00007ffd8e9e6000 	C:\Program Files\Zulu\zulu-11\bin\server\jvm.dll
+0x00007ffe080d0000 - 0x00007ffe0817f000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffe09da0000 - 0x00007ffe09e3c000 	C:\Windows\System32\sechost.dll
+0x00007ffe089f0000 - 0x00007ffe08b16000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffe09e40000 - 0x00007ffe09e48000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffe01990000 - 0x00007ffe01999000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffe08670000 - 0x00007ffe086db000 	C:\Windows\System32\WS2_32.dll
+0x00007ffdfc1e0000 - 0x00007ffdfc207000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffdff810000 - 0x00007ffdff81a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffe05400000 - 0x00007ffe05412000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ffe018c0000 - 0x00007ffe018d0000 	C:\Program Files\Zulu\zulu-11\bin\verify.dll
+0x00007ffdfa570000 - 0x00007ffdfa754000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffded7f0000 - 0x00007ffded824000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffe075d0000 - 0x00007ffe07652000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffdf8c20000 - 0x00007ffdf8c48000 	C:\Program Files\Zulu\zulu-11\bin\java.dll
+0x00007ffdfc270000 - 0x00007ffdfc27a000 	C:\Program Files\Zulu\zulu-11\bin\jimage.dll
+0x00007ffdfd9a0000 - 0x00007ffdfd9ae000 	C:\Program Files\Zulu\zulu-11\bin\instrument.dll
+0x00007ffdf8990000 - 0x00007ffdf89a8000 	C:\Program Files\Zulu\zulu-11\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Zulu\zulu-11\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;C:\Program Files\Zulu\zulu-11\bin\server
+
+VM Arguments:
+jvm_args: -XX:TieredStopAtLevel=1 -Xverify:none -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dmanagement.endpoints.jmx.exposure.include=* -javaagent:D:\IntelijUlti\IntelliJ IDEA 2022.3.2\lib\idea_rt.jar=6059:D:\IntelijUlti\IntelliJ IDEA 2022.3.2\bin -Dfile.encoding=UTF-8 
+java_command: com.example.apigatewayservice.ApigatewayServiceApplication
+java_class_path (initial): D:\MSAgit\MSA-\Section11\apigateway-service\target\classes;C:\Users\admin\.m2\repository\org\springframework\cloud\spring-cloud-starter-gateway\3.1.8\spring-cloud-starter-gateway-3.1.8.jar;C:\Users\admin\.m2\repository\org\springframework\cloud\spring-cloud-starter\3.1.7\spring-cloud-starter-3.1.7.jar;C:\Users\admin\.m2\repository\org\springframework\cloud\spring-cloud-context\3.1.7\spring-cloud-context-3.1.7.jar;C:\Users\admin\.m2\repository\org\springframework\security\spring-security-crypto\5.7.9\spring-security-crypto-5.7.9.jar;C:\Users\admin\.m2\repository\org\springframework\cloud\spring-cloud-commons\3.1.7\spring-cloud-commons-3.1.7.jar;C:\Users\admin\.m2\repository\org\springframework\security\spring-security-rsa\1.0.11.RELEASE\spring-security-rsa-1.0.11.RELEASE.jar;C:\Users\admin\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.69\bcpkix-jdk15on-1.69.jar;C:\Users\admin\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.69\bcprov-jdk15on-1.69.jar;C:\Users\admin\.m2\repository\org\bouncycastle\bcutil-jdk15on\1.69\bcutil-jdk15on-1.69.jar;C:\Users\admin\.m2\repository\org\springframework\cloud\spring-cloud-gateway-server\3.1.8\spring-cloud-gateway-server-3.1.8.jar;C:\Users\admin\.m2\repository\org\springframework\boot\spring-boot-starter-validation\2.7.13\spring-boot-starter-validation-2.7.13.jar;C:\Users\admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.76\tomcat-embed-el-9.0.76.jar;C:\Users\admin\.m2\repository\org\hibernate\validator\hibernate-validator\6.2.5.Final\hibernate-validator-6.2.5.Final.jar;C:\Users\admin\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\admin\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\admin\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\admin\.m2\repository\io\projectreactor\addons\reactor-extra\3.4.10\reactor-extra-3.4.10.jar;C:\Users\admin\.m2\repositor
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     bool BytecodeVerificationLocal                = false                                     {product} {command line}
+     bool BytecodeVerificationRemote               = false                                     {product} {command line}
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 10                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 2097152                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 536870912                                 {product} {ergonomic}
+     bool ManagementServer                         = true                                      {product} {command line}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 8571060224                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 2097152                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 7549744                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 244108496                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 0                                      {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     intx TieredStopAtLevel                        = 1                                         {product} {command line}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Zulu\zulu-11
+CLASSPATH=C:\Program Files\Zulu\zulu-11\lib
+PATH=C:\Program Files\Zulu\zulu-11\bin\;C:\Program Files\Zulu\zulu-17\bin\;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files\Java\jdk-17.0.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\libnvvp;C:\Program Files\Zulu\zulu-11\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.1.1\;C:\Program Files\Git\cmd;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\admin\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\admin\AppData\Local\Programs\Python\Python39\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\bin;C:\Users\admin\AppData\Roaming\npm;C:\Program Files\nodejs\;D:\maven\apache-maven-3.9.2\bin;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\Zulu\zulu-11\bin;C:\Users\admin\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\admin\AppData\Local\Programs\Python\Python39\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\bin;;C:\Users\admin\AppData\Roaming\npm;D:\IntelijUlti\IntelliJ IDEA 2022.3.2\bin;;D:\Pycharm\PyCharm 2022.3.2\bin;;C:\Program Files\ffmg\ffmpeg-2023-03-05-git-912ac82a3c-essentials_build\bin;C:\Program Files\Erlang OTP;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.12.1\sbin;
+USERNAME=admin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD
+TMP=C:\Users\admin\AppData\Local\Temp
+TEMP=C:\Users\admin\AppData\Local\Temp
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.3155)
+OS uptime: 2 days 9:41 hours
+Hyper-V role detected
+
+CPU:total 12 (initial active 12) (12 cores per cpu, 2 threads per core) family 25 model 33 stepping 0 microcode 0x0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, mmxext, 3dnowpref, lzcnt, sse4a, ht, tsc, tscinvbit, tscinv, bmi1, bmi2, adx, sha, fma
+
+Memory: 4k page, system-wide physical 32694M (11091M free)
+TotalPageFile size 32694M (AvailPageFile size 398M)
+current process WorkingSet (physical memory assigned to process): 11M, peak: 11M
+current process commit charge ("private bytes"): 62M, peak: 574M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.18+10-LTS) for windows-amd64 JRE (Zulu11.62+17-CA) (11.0.18+10-LTS), built on Jan  4 2023 15:02:54 by "zulu_re" with MS VC++ 15.9 (VS2017)
+
+END.
