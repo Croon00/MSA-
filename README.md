@@ -1,6 +1,6 @@
 ### 인프런 Spring Cloud 강의
 
-[Spring Cloud로 개발하는 마이크로서비스 애플리케이션(MSA) - 인프런 | 강의](https://www.inflearn.com/course/스프링-클라우드-마이크로서비스/dashboard)
+[Spring Cloud로 개발하는 마이크로서비스 애플리케이션(MSA) - 인프런 | 강의](https://www.inflearn.com/course/스프링-클라우드-마이크로서비스/)
 
 Resilient / ANTIFRAGILE(불확실성과 혼돈으로 부터 이익을 얻는 성질) 키워드의 증가 2010년 이후
 
